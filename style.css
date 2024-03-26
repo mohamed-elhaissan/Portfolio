@@ -16,6 +16,27 @@ h1 {
 body {
     width: 100%;
 }
+#nav {
+    position: fixed;
+    right: 0;
+    top: 0%;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    height: 100vh;
+    width: 200px;
+    z-index: 999;
+    align-items: flex-start;
+    justify-content: space-between;
+    display: none;
+
+}
+
+#nav ul {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+}
 .btn {
     border: 1px solid #000;
     color: #000;
@@ -63,10 +84,14 @@ nav ul li a {
     font-weight: 500;
     position: relative;
     display: inline-block;
-    transition: scale .5s ease;
+    transition: scale .3s ease;
 }
 nav ul li a:hover {
     scale: 1.1;
+}
+nav ul li a:focus {
+    scale: 1;
+    color: #00ff00;
 }
 nav ul li a::before {
     content: '';
@@ -118,6 +143,9 @@ h2 span {
 .socail-medai a:hover i {
     background-color: #d9d9d9;
 }
+.fa-bars-staggered {
+    display: none;
+}
 .cards div i {
     font-size: 50px;
 }
@@ -154,14 +182,15 @@ h2 span {
 
 .cards div:nth-of-type(2n+1)::before {
     content: '';
-    width: 50px;
+    width: 80px;
     height: 200%;
-    background-color: #fdc500;
+    background: #00ff00;
     position: absolute;
     left: 50%;
     z-index: -1;
+    filter: blur(10px);
     top: -50%;
-    animation: animatebefore 20s linear infinite;
+    animation: animatebefore 5s linear infinite;
 }
 .cards div:nth-of-type(2n+1)::after {
     content: '';
@@ -195,6 +224,7 @@ h2 span {
     position: absolute;
     top: 0;
     left: -100%;
+    z-index: -99;
 }
 
 .Experience::after {
@@ -204,6 +234,7 @@ h2 span {
     background-color: #000;
     position: absolute;
     top: 0;
+    z-index: -99;
     right: -100%;
 }
 .Experience div {
@@ -213,12 +244,23 @@ h2 span {
 }
 .Experience div:hover {
     transform: scale(1.01);
-    border: 1px solid #fdc500;
+    border: 2px solid #00ff00;
+}
+.Experience div i {
+    transition: color .4s ease;
+}
+.Experience div:hover i{
+    color: #00ff00;
+    -webkit-text-stroke: 1px black;
 }
 .project {
     background-color: #000;
     color: #fff;
     position: relative;
+}
+.about-me div h2::first-letter {
+    color: #52b788;
+    font-size: 80px;
 }
 .project::before {
     content: '';
@@ -255,13 +297,14 @@ h2 span {
     filter: grayscale(0);
 }
 .project div:hover >h3 {
-    color: #fdc500;
+    color: #00ff00;
 }
 .project div div a i:focus {
     color: gold;
     padding: 10px;
     border-radius: 20px;
 }
+
 .feedback > div {
     border: 1px solid rgba(0, 0,0,.01);
     border-radius: 20px;
@@ -272,7 +315,7 @@ h2 span {
     position: relative;
     overflow: hidden;
     transition: all .5s ;
-    width: 400px;
+    width: 350px;
 }
 .feedback div div {
     width: 80%;
@@ -289,7 +332,8 @@ h2 span {
     height: 100%;
     width: 2%;
     border-radius: 50px;
-    background-color: #fdc500;
+    background: linear-gradient(to top,#00ff00,#52b788);
+
     transform: scaleY(0);
     transform-origin: bottom;
     transition: transform .4s;
@@ -301,7 +345,7 @@ h2 span {
     height: 100%;
     width: 2%;
     border-radius: 50px;
-    background-color: #fdc500;
+    background: linear-gradient(to top,#52b788,#00ffff);
     transform: scaleY(0);
     transform-origin: top;
     transition: transform .4s;
@@ -320,4 +364,192 @@ input {
     padding: 10px;
 }
 
-.contact-form
+.contact-form div:last-of-type h2 span {
+    color: transparent;
+    -webkit-text-stroke: 2px  black;
+}
+.contact-form .btn {
+    background-color:#000 ;
+    color: wheat;
+
+}
+footer {
+    background-color: #000;
+    color: #fff;
+    position: relative;
+}
+footer::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: -100%;
+}
+
+footer::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    right: -100%;
+}
+/* Customaizing */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    main section:first-of-type {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .conetent-1 {
+        text-align: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+    }
+    .about-me {
+        flex-direction: column;
+        text-align: center;
+    }
+    .project > div div p {
+        width: 100%;
+    }
+    .project div  div{
+        flex-direction: column !important;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .feedback {
+        align-items: center;
+        justify-content: center;
+    }
+    .feedback div {
+        width: 300px;
+    }
+    .contact-form {
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+    }
+    .contact {
+        width: 80%;
+    }
+    .fs-4 {
+        font-size: 15px !important;
+    }
+    
+    
+  }
+  @media only screen and (max-width: 767px) {
+   .navbar .btn {
+    display: none;
+   }
+   .fa-bars-staggered {
+    display: block;
+   }
+   nav:not(#nav){
+    display: none;
+   }
+   .fa-xmark {
+    font-size: 20px;
+    margin-top: 20px;
+    transition: all .3s ease;
+   /* }
+   .fa-xmark {
+    color: red;
+   } */
+   
+  }
+  main section:first-of-type {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    }
+    .conetent-1 {
+    text-align: center;
+    align-items: center;
+    margin-top: 100px;
+    }
+    .img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    }
+    .Experience div span h3 {
+        font-size: 20px;
+    }
+    .Experience div span p {
+        font-size: 20px;
+    }
+    .about-me div img {
+        margin: 10px;
+        width: 400px;
+    }
+    .about-me {
+    flex-direction: column;
+    text-align: center;
+    }
+    .project > div div p {
+    width: 100%;
+    }
+    .project .d-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+    .project .item img {
+        width: 400px;
+    }
+    .project div .flex-row-reverse {
+        flex-direction: column !important;
+        
+    }
+    .contact-form {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .contact {
+        width: 80%;
+    }
+    .contact div .btn {
+        width: 200px !important;
+    }
+}
+.scrool {
+    position: fixed;
+    right: 2%;
+    bottom: 4%;
+}
+.scrool i {
+    font-size: 30px;
+    background-color: #d9d9d9;
+    padding: 18px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    animation: scoling 1s ;
+}
+@keyframes scoling {
+    0% {
+        transform: scaleY(-10px);
+        opacity: 0;
+    }
+    100% {
+        transform: scaleY(10px);
+        opacity: 1;
+    }
+    
+}

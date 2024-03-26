@@ -17,11 +17,21 @@
             <h1 class="fs-3">Mohamed</h1>
             <nav>
                 <ul class="d-flex align-items-center justify-content-between">
+                    <li><a href="#" id="about">About Me</a></li>
+                    <li><a href="#" id="skills">Skills</a></li>
+                    <li><a href="#" id="project">Project</a></li>
+                    <li><a href="#" id="contant">Contact</a></li>
+            </nav>
+            <nav id="nav">
+                <ul class="d-flex align-items-center justify-content-between">
+                    <i class="fa-solid fa-xmark" onclick="closenavbar()"></i>
                     <li><a href="#">About Me</a></li>
                     <li><a href="#">Skills</a></li>
                     <li><a href="#">Project</a></li>
                     <li><a href="#">Contact</a></li>
+                    
             </nav>
+            <i class="fa-solid fa-bars-staggered" onclick="shownavbar()"></i>
             <button class="btn  transition-element">Resume</button>
         </section>
         <main>
@@ -79,7 +89,7 @@
             </section>
             <section class="Experience  my-5 p-5">
                 <h2 class="text-center text-white my-5">My <span>Experience</span></h2>
-                <div class="p-4 my-3">
+                <div class="item glow p-4 my-3">
                     <span >
                         <h3>
                             <i class="fa-brands fa-google me-3"></i>
@@ -90,7 +100,7 @@
                     </span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eveniet totam obcaecati et nihil accusamus voluptatibus atque ea, perspiciatis aut officiis, porro, hic molestias vero distinctio dolore enim facilis illo?</p>
                 </div >
-                <div class="p-4 my-3">
+                <div class="item glow p-4 my-3">
                     <span>
                         
                         <h3><i class="fa-brands fa-youtube me-3"></i>
@@ -100,7 +110,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ratione, impedit consectetur libero molestias provident? Nemo, atque. Reiciendis eveniet error esse temporibus perferendis dolorum quos natus accusantium est? In, ipsam.</p>
 
                 </div>
-                <div class="p-4 my-3">
+                <div class="item glow p-4 my-3">
 
                     <span>
                         <h3><i class="fa-brands fa-apple me-3"></i>
@@ -121,10 +131,10 @@
                     <p>When I'm not in full-on developer mode, you can find me hovering around on twitter or on indie hacker, witnessing the journey of early startups or enjoying some free time. You can follow me on Twitter where I share tech-related bites and build in public, or you can follow me on GitHub.</p>
                 </div>
             </section>
-            <section class="project">
+            <section class="project p-4">
                 <div>
                     <div class="d-flex my-3 justify-content-between align-items-center">
-                        <img src="assests/item-3.svg" >
+                        <div class="item"><img src="assests/item-3.svg" ></div>
                         <div class="text-white ">
                             <h2>01</h2>
                             <h3>Hoobank</h3>
@@ -132,8 +142,8 @@
                             <a href="https://alphaxprog.github.io/hoobank/"><i class="fa-regular fa-share-from-square text-white"></i></a>
                         </div>
                     </div>
-                    <div class="d-flex my-3 justify-content-between align-items-center flex-row-reverse">
-                        <img src="assests/item-4.svg" >
+                    <div class="moxkila d-flex my-3 justify-content-between align-items-center flex-row-reverse">
+                        <div class="item"><img src="assests/item-4.svg"  ></div>
                         <div class="text-white" >
                             <h2>02</h2>
                             <h3>Euphoria - Ecommerce (Apparels) Website </h3>
@@ -142,7 +152,7 @@
                         </div>
                     </div>
                     <div class="d-flex my-3 justify-content-between align-items-center">
-                        <img src="assests/item-5.svg" >
+                        <div class="item"><img src="assests/item-5.svg"  ></div>
                         <div class="text-white">
                             <h2>03</h2>
                             <h3>Crypto And NFts website</h3>
@@ -156,22 +166,22 @@
             </section>
             <section class="Testimonial my-5">
                 <h2 class="text-center my-4 ">My <span class="fw-bold">Testimonial</span></h2>
-                <div class="feedback d-flex justify-content-between my-5">
-                    <div class="feedback-1 d-flex flex-column text-center  justify-content-center align-items-center p-5">
+                <div class="feedback d-flex  flex-wrap align-items-center justify-content-center">
+                    <div class="feedback-1 d-flex flex-column text-center  justify-content-center align-items-center p-5 m-2">
                         <img src="assests/item-6.svg" width="100" height="100">
                         <p>I recently had to jump on 10+ different calls across eight different countries to find the right owner.</p>
                         <div class="line"></div>
-                        <h3>Evren Shah</h3>
+                        <h3 class="fw-bold">Evren Shah</h3>
                         <h5>Designer</h5>
                     </div>
-                    <div class="feedback-2 d-flex flex-column text-center  justify-content-center align-items-center p-5">
+                    <div class="feedback-2 d-flex flex-column text-center  justify-content-center align-items-center p-5 m-2">
                         <img src="assests/item-7.svg" width="100" height="100">
                         <p>I recently had to jump on 10+ different calls across eight different countries to find the right owner.</p>
                         <div class="line"></div>
                         <h3 class="fw-bold">Flora sheen</h3>
                         <h5>Designer</h5>
                     </div>
-                    <div class="feedback-3 d-flex flex-column text-center justify-content-center align-items-center  p-5">
+                    <div class="feedback-3 d-flex flex-column text-center justify-content-center align-items-center  p-5 m-2">
                         <img src="assests/item-8.svg" width="100" height="100" >
                         <p>I recently had to jump on 10+ different calls across eight different countries to find the right owner.</p>
                         <div class="line"></div>
@@ -187,17 +197,25 @@
                     <input type="text" placeholder="Your Website (if Exist)">
                     <textarea class="p-3" cols="30" rows="10" placeholder="How Can help Your ?"></textarea>
                     <div>
-                        <button class="btn w-25 bg-primary">Get In Touch</button>
+                        <button class="btn w-25 ">Get In Touch</button>
                         
                     </div>
                 </div>
                 <div>
-                    <h2 class="fw-bold">let's <span>Talk</span> for Something Special</h2>
-                    <p>I seek to push the limits of creativity to create high-engaging, user-friendly, and memorable interactive experiences.</p>
+                    <h2 class="fw-bold">Let's <span>Talk</span> for Something Special</h2>
+                    <p class="opacity-50">I seek to push the limits of creativity to create high-engaging, user-friendly, and memorable interactive experiences.</p>
 
                 </div>
             </section>
         </main>
+        <footer class="d-flex justify-content-between align-items-center p-3">
+            <h2 class="fw-bold fs-4 ">Mohamed</h2>
+            <h4 class="fw-bold fs-4">@2024 made by Mohamed</h4>
+        </footer>
+
+    <div class="scrool">
+        <i class="fa-solid fa-arrow-up" id="scroolarrow" ></i>
+    </div>
     </div>
     <script src="script.js"></script>
 </body>
