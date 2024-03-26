@@ -91,7 +91,7 @@ nav ul li a:hover {
 }
 nav ul li a:focus {
     scale: 1;
-    color: #00ff00;
+    color: #ffb703;
 }
 nav ul li a::before {
     content: '';

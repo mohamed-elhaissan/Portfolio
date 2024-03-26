@@ -30,11 +30,11 @@ scroling.onclick = function () {
 const about = document.querySelector('#about');
 const skills = document.querySelector('#skills');
 const project = document.querySelector('#project');
-const contact = document.querySelector('#contact');
+const contact = document.getElementById('#contact');
 
 about.onclick = function () {
     scroll({
-        top:2906.39990234375,
+        top:2146.39990234375,
         left:0,
         behavior:"smooth"
 
@@ -58,9 +58,9 @@ project.onclick = function () {
 }
 contact.onclick = function () {
     scroll({
-        top:4900,
+        top:4910,
         left:0,
         behavior:"smooth"
 
-    })
+    });
 }
