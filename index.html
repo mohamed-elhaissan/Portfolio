@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
     <title>Portfolio</title>
 </head>
+
 <body>
     <div class="container">
         <section class="navbar d-flex justify-content-between align-items-center mt-3">
@@ -22,6 +25,7 @@
                     <li><a href="#" id="project">Project</a></li>
                     <li><a href="#" id="contant">Contact</a></li>
             </nav>
+            
             <nav id="nav">
                 <ul class="d-flex align-items-center justify-content-between">
                     <i class="fa-solid fa-xmark" onclick="closenavbar()"></i>
@@ -29,31 +33,44 @@
                     <li><a href="#">Skills</a></li>
                     <li><a href="#">Project</a></li>
                     <li><a href="#">Contact</a></li>
-                    
+
             </nav>
             <i class="fa-solid fa-bars-staggered" onclick="shownavbar()"></i>
-            <button class="btn  transition-element">Resume</button>
+            <button class="btn  transition-element" id="resume">Resume <i class="fa-solid fa-download"></i></button>
         </section>
         <main>
             <section class="d-flex justify-content-between align-items-center my-2 ">
                 <div class="conetent-1 d-flex flex-column ">
-                    <h2 >Hello I'm <span>Mohamed</span> <span>Frontend Developer</span>  Based in <span>Maroc</span></h2>
-                    <p class="my-5">My name is Mohamed. Contrary to appearances, this sentence is not about me. In the world of web design</p>
-                    <div class="socail-medai my-4 d-flex gap-4" >
-                        <a href="https://web.facebook.com/profile.php?id=100053763824674"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/mohamed_elhaissan/"><i class="fa-brands fa-instagram"></i></a>
+                    <h2>Hello I'm <span>Mohamed</span> <span>Frontend Developer</span> Based in <span>Maroc</span></h2>
+                    <p class="my-5">My name is Mohamed. Contrary to appearances, this sentence is not about me. In the
+                        world of web design</p>
+                    <div class="socail-medai my-4 d-flex gap-4">
+                        <a href="https://web.facebook.com/profile.php?id=100053763824674"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/mohamed_elhaissan/"><i
+                                class="fa-brands fa-instagram"></i></a>
                         <a href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="https://www.youtube.com/channel/UCXn2BxxwWlEerVxYXYOmlaA"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.youtube.com/channel/UCXn2BxxwWlEerVxYXYOmlaA"><i
+                                class="fa-brands fa-youtube"></i></a>
                     </div>
                 </div>
                 <div class="img">
                     <img src="assests/item-1.svg" width="700" height="700">
                 </div>
             </section>
+            <div class="contentsperator">
+                <div>
+                    <h3>Coder</h3>
+                    <i class="fa-solid fa-star"></i>
+                    <h3>Designer</h3>
+                    <i class="fa-solid fa-star"></i>
+                    <h3>Developer</h3>
+                </div>
+            </div>
             <section class="skills">
                 <h2 class="text-center my-5">My <span>Skills</span></h2>
                 <div class="cards d-flex  flex-wrap align-items-center justify-content-center">
-                    <div >
+                    <div>
                         <i class="fa-brands fa-python"></i>
                         <h2>Python</h2>
                     </div>
@@ -90,7 +107,7 @@
             <section class="Experience  my-5 p-5">
                 <h2 class="text-center text-white my-5">My <span>Experience</span></h2>
                 <div class="item glow p-4 my-3">
-                    <span >
+                    <span>
                         <h3>
                             <i class="fa-brands fa-google me-3"></i>
                             Lead Software Engineer at Google
@@ -98,16 +115,20 @@
                         2019
 
                     </span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eveniet totam obcaecati et nihil accusamus voluptatibus atque ea, perspiciatis aut officiis, porro, hic molestias vero distinctio dolore enim facilis illo?</p>
-                </div >
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eveniet totam obcaecati et nihil
+                        accusamus voluptatibus atque ea, perspiciatis aut officiis, porro, hic molestias vero distinctio
+                        dolore enim facilis illo?</p>
+                </div>
                 <div class="item glow p-4 my-3">
                     <span>
-                        
+
                         <h3><i class="fa-brands fa-youtube me-3"></i>
                             Software Engineer at Youtube</h3>
                         2017
                     </span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ratione, impedit consectetur libero molestias provident? Nemo, atque. Reiciendis eveniet error esse temporibus perferendis dolorum quos natus accusantium est? In, ipsam.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ratione, impedit consectetur
+                        libero molestias provident? Nemo, atque. Reiciendis eveniet error esse temporibus perferendis
+                        dolorum quos natus accusantium est? In, ipsam.</p>
 
                 </div>
                 <div class="item glow p-4 my-3">
@@ -117,7 +138,9 @@
                             Junior Software Engineer at Apple</h3>
                         2016
                     </span>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quas nesciunt optio ipsa consequatur esse natus dolore hic debitis atque maxime, obcaecati ex, iure, a accusamus placeat quo perferendis nemo?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quas nesciunt optio ipsa
+                        consequatur esse natus dolore hic debitis atque maxime, obcaecati ex, iure, a accusamus placeat
+                        quo perferendis nemo?</p>
                 </div>
             </section>
             <section class="about-me my-5 d-flex  align-items-center">
@@ -126,37 +149,54 @@
                 </div>
                 <div>
                     <h2 class="text-center my-5 fw-bold">About Me</h2>
-                    <p>I'm a passionate, self-proclaimed designer who specializes in full stack development (React.js & Node.js). I am very enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.</p>
-                    <p>I began my journey as a web developer in 2015, and since then, I've continued to grow and evolve as a developer, taking on new challenges and learning the latest technologies along the way. Now, in my early thirties, 7 years after starting my web development journey, I'm building cutting-edge web applications using modern technologies such as Next.js, TypeScript, Nestjs, Tailwindcss, Supabase and much more.</p>
-                    <p>When I'm not in full-on developer mode, you can find me hovering around on twitter or on indie hacker, witnessing the journey of early startups or enjoying some free time. You can follow me on Twitter where I share tech-related bites and build in public, or you can follow me on GitHub.</p>
+                    <p>I'm a passionate, self-proclaimed designer who specializes in full stack development (React.js &
+                        Node.js). I am very enthusiastic about bringing the technical and visual aspects of digital
+                        products to life. User experience, pixel perfect design, and writing clear, readable, highly
+                        performant code matters to me.</p>
+                    <p>I began my journey as a web developer in 2015, and since then, I've continued to grow and evolve
+                        as a developer, taking on new challenges and learning the latest technologies along the way.
+                        Now, in my early thirties, 7 years after starting my web development journey, I'm building
+                        cutting-edge web applications using modern technologies such as Next.js, TypeScript, Nestjs,
+                        Tailwindcss, Supabase and much more.</p>
+                    <p>When I'm not in full-on developer mode, you can find me hovering around on twitter or on indie
+                        hacker, witnessing the journey of early startups or enjoying some free time. You can follow me
+                        on Twitter where I share tech-related bites and build in public, or you can follow me on GitHub.
+                    </p>
                 </div>
             </section>
             <section class="project p-4">
                 <div>
                     <div class="d-flex my-3 justify-content-between align-items-center">
-                        <div class="item"><img src="assests/item-3.svg" ></div>
+                        <div class="item"><img src="assests/item-3.svg"></div>
                         <div class="text-white ">
                             <h2>01</h2>
                             <h3>Hoobank</h3>
-                            <p>I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.</p>
-                            <a href="https://alphaxprog.github.io/hoobank/"><i class="fa-regular fa-share-from-square text-white"></i></a>
+                            <p>I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                unknown printer took a galley of type and scrambled it to specimen book.</p>
+                            <a href="https://alphaxprog.github.io/hoobank/"><i
+                                    class="fa-regular fa-share-from-square text-white"></i></a>
                         </div>
                     </div>
                     <div class="moxkila d-flex my-3 justify-content-between align-items-center flex-row-reverse">
-                        <div class="item"><img src="assests/item-4.svg"  ></div>
-                        <div class="text-white" >
+                        <div class="item"><img src="assests/item-4.svg"></div>
+                        <div class="text-white">
                             <h2>02</h2>
                             <h3>Euphoria - Ecommerce (Apparels) Website </h3>
-                            <p>I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.</p>
+                            <p>I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                unknown printer took a galley of type and scrambled it to specimen book.</p>
                             <i class="fa-regular fa-share-from-square"></i>
                         </div>
                     </div>
                     <div class="d-flex my-3 justify-content-between align-items-center">
-                        <div class="item"><img src="assests/item-5.svg"  ></div>
+                        <div class="item"><img src="assests/item-5.svg"></div>
                         <div class="text-white">
                             <h2>03</h2>
                             <h3>Crypto And NFts website</h3>
-                            <p>I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.</p>
+                            <p>I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                unknown printer took a galley of type and scrambled it to specimen book.</p>
                             <a href="https://alphaxprog.github.io/NFTs-responsive/">
                                 <i class="fa-regular fa-share-from-square text-white"></i>
                             </a>
@@ -167,23 +207,29 @@
             <section class="Testimonial my-5">
                 <h2 class="text-center my-4 ">My <span class="fw-bold">Testimonial</span></h2>
                 <div class="feedback d-flex  flex-wrap align-items-center justify-content-center">
-                    <div class="feedback-1 d-flex flex-column text-center  justify-content-center align-items-center p-5 m-2">
+                    <div
+                        class="feedback-1 d-flex flex-column text-center  justify-content-center align-items-center p-5 m-2">
                         <img src="assests/item-6.svg" width="100" height="100">
-                        <p>I recently had to jump on 10+ different calls across eight different countries to find the right owner.</p>
+                        <p>I recently had to jump on 10+ different calls across eight different countries to find the
+                            right owner.</p>
                         <div class="line"></div>
                         <h3 class="fw-bold">Evren Shah</h3>
                         <h5>Designer</h5>
                     </div>
-                    <div class="feedback-2 d-flex flex-column text-center  justify-content-center align-items-center p-5 m-2">
+                    <div
+                        class="feedback-2 d-flex flex-column text-center  justify-content-center align-items-center p-5 m-2">
                         <img src="assests/item-7.svg" width="100" height="100">
-                        <p>I recently had to jump on 10+ different calls across eight different countries to find the right owner.</p>
+                        <p>I recently had to jump on 10+ different calls across eight different countries to find the
+                            right owner.</p>
                         <div class="line"></div>
                         <h3 class="fw-bold">Flora sheen</h3>
                         <h5>Designer</h5>
                     </div>
-                    <div class="feedback-3 d-flex flex-column text-center justify-content-center align-items-center  p-5 m-2">
-                        <img src="assests/item-8.svg" width="100" height="100" >
-                        <p>I recently had to jump on 10+ different calls across eight different countries to find the right owner.</p>
+                    <div
+                        class="feedback-3 d-flex flex-column text-center justify-content-center align-items-center  p-5 m-2">
+                        <img src="assests/item-8.svg" width="100" height="100">
+                        <p>I recently had to jump on 10+ different calls across eight different countries to find the
+                            right owner.</p>
                         <div class="line"></div>
                         <h3 class="fw-bold">Evren Shah</h3>
                         <h5 class="opacity-50">Designer</h5>
@@ -191,19 +237,20 @@
                 </div>
             </section>
             <section class="contact-form my-5 d-flex justify-content-between align-items-center">
-                <div class="contact d-flex flex-column my-5 gap-2 me-5">
-                    <input type="text" placeholder="Your name" >
-                    <input type="email" placeholder="Email">
+                <form class="contact d-flex flex-column my-5 gap-2 me-5">
+                    <input type="text" placeholder="Your name" required minlength="4">
+                    <input type="email" placeholder="Email" required>
                     <input type="text" placeholder="Your Website (if Exist)">
                     <textarea class="p-3" cols="30" rows="10" placeholder="How Can help Your ?"></textarea>
                     <div>
                         <button class="btn w-25 ">Get In Touch</button>
-                        
+
                     </div>
-                </div>
+                </form>
                 <div>
                     <h2 class="fw-bold">Let's <span>Talk</span> for Something Special</h2>
-                    <p class="opacity-50">I seek to push the limits of creativity to create high-engaging, user-friendly, and memorable interactive experiences.</p>
+                    <p class="opacity-50">I seek to push the limits of creativity to create high-engaging,
+                        user-friendly, and memorable interactive experiences.</p>
 
                 </div>
             </section>
@@ -213,10 +260,11 @@
             <h4 class="fw-bold fs-4">@2024 made by Mohamed</h4>
         </footer>
 
-    <div class="scrool">
-        <i class="fa-solid fa-arrow-up" id="scroolarrow" ></i>
-    </div>
+        <div class="scrool">
+            <i class="fa-solid fa-chevron-up" id="scroolarrow"></i>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>

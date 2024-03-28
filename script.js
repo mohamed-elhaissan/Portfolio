@@ -1,3 +1,7 @@
+const about = document.querySelector('#about');
+const skills = document.querySelector('#skills');
+const project = document.querySelector('#project');
+const contact = document.querySelector('#contant');
 const navbar = document.getElementById("nav");
 const close = document.getElementsByClassName('fa-xmark');
 function closenavbar() {
@@ -27,10 +31,6 @@ scroling.onclick = function () {
     })
 }
 
-const about = document.querySelector('#about');
-const skills = document.querySelector('#skills');
-const project = document.querySelector('#project');
-const contact = document.getElementById('#contact');
 
 about.onclick = function () {
     scroll({
@@ -58,9 +58,14 @@ project.onclick = function () {
 }
 contact.onclick = function () {
     scroll({
-        top:4910,
+        top:4900,
         left:0,
         behavior:"smooth"
 
     });
+}
+
+const resumebutton = document.getElementById('resume');
+resumebutton.onclick = function (){
+    window.print()
 }
