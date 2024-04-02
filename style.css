@@ -238,7 +238,7 @@ h2 span {
 
 .contentsperator {
     height: 80px;
-    background: linear-gradient(90deg,rgba(58, 175, 169, 1), rgba(44, 58, 64, 1), rgba(58, 175, 169, 1));
+    background: linear-gradient(90deg,rgba(58, 175, 169, 1), rgba(58, 175, 169, 1));
     position: relative;
 }
 .contentsperator::before {
@@ -431,7 +431,7 @@ h2 span {
     gap: 10px;
     cursor: pointer;
     background-color: #e9ecef80;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, .5);
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, .5);
     position: relative;
     overflow: hidden;
     transition: all .5s;
@@ -488,32 +488,12 @@ h2 span {
     transform: scaleY(1);
 }
 
-.contact {
-    width: 50%;
-}
 
-input {
-    padding: 10px;
-}
 
-input:focus {
-    border: 1px solid #0077b6;
-}
-
-.contact-form div:last-of-type h2 span {
-    color: transparent;
-    -webkit-text-stroke: 2px black;
-}
-
-.contact-form .btn {
-    background-color: #000;
-    color: wheat;
-
-}
 
 footer {
-    background-color: #000;
-    color: #fff;
+    background-color: #F4F6FB;
+    color: #000;
     position: relative;
 }
 
@@ -521,7 +501,7 @@ footer::before {
     content: '';
     width: 100%;
     height: 100%;
-    background-color: #000;
+    background-color: #F4F6FB;
     position: absolute;
     top: 0;
     left: -100%;
@@ -531,7 +511,7 @@ footer::after {
     content: '';
     width: 100%;
     height: 100%;
-    background-color: #000;
+    background-color: #F4F6FB;
     position: absolute;
     top: 0;
     right: -100%;
@@ -545,7 +525,37 @@ footer::after {
         align-items: center;
         justify-content: center;
     }
+    nav ul{
+        position: fixed;
+        height: 50vh;
+        padding: 20px 0px 100vh 0px;
 
+        right: 0%;
+        width: 40%;
+        top: 0%;
+        background-color: rgba(0, 0, 0, .01);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+    }
+    nav {
+        display: none;
+        animation: lefting .5s ease;
+    }
+    @keyframes lefting {
+        0% {
+            left: -10%;
+        }
+        100% {
+            right: 0%;
+        }
+    }
+    .fa-bars-staggered {
+        display: block;
+    }
+
+    .transition-element {
+        display: none;
+    }
     .conetent-1 {
         text-align: center;
         align-items: center;
@@ -585,20 +595,12 @@ footer::after {
         width: 300px;
     }
 
-    .contact-form {
-        flex-direction: column-reverse;
-        text-align: center;
-        align-items: center;
-    }
-
-    .contact {
-        width: 80%;
-    }
+    
 
     .fs-4 {
         font-size: 15px !important;
     }
-
+    
 
 }
 
@@ -690,18 +692,6 @@ footer::after {
 
     }
 
-    .contact-form {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-
-    .contact {
-        width: 80%;
-    }
-
-    .contact div .btn {
-        width: 200px !important;
-    }
 }
 
 .scrool {
@@ -741,4 +731,72 @@ footer::after {
     body {
       font-size: 12pt;
     }
+}
+p {
+    font-size: 16px;
+}
+.conetent-1 h2 {
+    font-size: 50px;
+}
+.scrolling-box {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 20%;
+    left: 0;
+    background-color: rgba(255, 255, 255, .05);
+    backdrop-filter: blur(10px);
+    color: #000;
+    padding: 20px;
+    justify-content: space-between;
+    
+    border-radius: 0px 30px 30px 0px;
+    gap: 40px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    animation: scrollbox .5s ease;
+}
+@keyframes scrollbox {
+    0% {
+        left: -10%;
+        opacity: 0;
+    }
+
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+
+}
+.scrolling-box i {
+    color: rgba(43, 122, 120, 1);
+    font-size: 30px;
+    transition: all .4s ease;
+}
+.scrolling-box i:hover {
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, .05);
+    border-radius: 20px;
+}
+.contactme {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 100px 0px;
+    padding: 100px 0px;
+
+}
+
+.contactme a {
+    padding: 10px 20px;
+    background-color: rgba(43, 122, 120, 1);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px ;
+}
+.contactme h5 {
+    font-size: 25px;
 }

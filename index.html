@@ -20,26 +20,19 @@
             <h1 class="fs-3">Mohamed</h1>
             <nav>
                 <ul class="d-flex align-items-center justify-content-between">
-                    <li><a href="#" id="about">About Me</a></li>
-                    <li><a href="#" id="skills">Skills</a></li>
-                    <li><a href="#" id="project">Project</a></li>
-                    <li><a href="#" id="contant">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeing()"></i>
+                    <li><a href="#home" >Home</a></li>
+                    <li><a href="#about" >About Me</a></li>
+                    <li><a href="#skills" >Skills</a></li>
+                    <li><a href="#project" >Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
             </nav>
             
-            <nav id="nav">
-                <ul class="d-flex align-items-center justify-content-between">
-                    <i class="fa-solid fa-xmark" onclick="closenavbar()"></i>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Project</a></li>
-                    <li><a href="#">Contact</a></li>
-
-            </nav>
             <i class="fa-solid fa-bars-staggered" onclick="shownavbar()"></i>
             <button class="btn  transition-element" id="resume">Resume <i class="fa-solid fa-download"></i></button>
         </section>
         <main>
-            <section class="d-flex justify-content-between align-items-center my-2 ">
+            <section class="d-flex justify-content-between align-items-center my-2 " id="home">
                 <div class="conetent-1 d-flex flex-column ">
                     <h2>Hello I'm <span>Mohamed</span> <span>Frontend Developer</span> Based in <span>Maroc</span></h2>
                     <p class="my-5">My name is Mohamed. Contrary to appearances, this sentence is not about me. In the
@@ -67,7 +60,7 @@
                     <h3>Developer</h3>
                 </div>
             </div>
-            <section class="skills">
+            <section class="skills" id="skills">
                 <h2 class="text-center my-5">My <span>Skills</span></h2>
                 <div class="cards d-flex  flex-wrap align-items-center justify-content-center">
                     <div>
@@ -104,7 +97,7 @@
                     </div>
                 </div>
             </section>
-            <section class="Experience  my-5 p-5">
+            <section class="Experience  my-5 p-5" id="Experience">
                 <h2 class="text-center text-white my-5">My <span>Experience</span></h2>
                 <div class="item glow p-4 my-3">
                     <span>
@@ -143,7 +136,7 @@
                         quo perferendis nemo?</p>
                 </div>
             </section>
-            <section class="about-me my-5 d-flex  align-items-center">
+            <section class="about-me my-5 d-flex  align-items-center" id="about">
                 <div>
                     <img src="assests/item-2.svg" class="me-5">
                 </div>
@@ -164,7 +157,7 @@
                     </p>
                 </div>
             </section>
-            <section class="project p-4">
+            <section class="project p-4" id="project">
                 <div>
                     <div class="d-flex my-3 justify-content-between align-items-center">
                         <div class="item"><img src="assests/item-3.svg"></div>
@@ -204,7 +197,7 @@
                     </div>
                 </div>
             </section>
-            <section class="Testimonial my-5">
+            <section class="Testimonial my-5" >
                 <h2 class="text-center my-4 ">My <span class="fw-bold">Testimonial</span></h2>
                 <div class="feedback d-flex  flex-wrap align-items-center justify-content-center">
                     <div
@@ -236,33 +229,29 @@
                     </div>
                 </div>
             </section>
-            <section class="contact-form my-5 d-flex justify-content-between align-items-center">
-                <form class="contact d-flex flex-column my-5 gap-2 me-5">
-                    <input type="text" placeholder="Your name" required minlength="4">
-                    <input type="email" placeholder="Email" required>
-                    <input type="text" placeholder="Your Website (if Exist)">
-                    <textarea class="p-3" cols="30" rows="10" placeholder="How Can help Your ?"></textarea>
-                    <div>
-                        <button class="btn w-25 ">Get In Touch</button>
-
-                    </div>
-                </form>
-                <div>
-                    <h2 class="fw-bold">Let's <span>Talk</span> for Something Special</h2>
-                    <p class="opacity-50">I seek to push the limits of creativity to create high-engaging,
-                        user-friendly, and memorable interactive experiences.</p>
-
-                </div>
+            <section class="contactme d-flex justify-content-between align-items-center" id="contact">
+                
+                <h5>Let's get in touch </h5>
+                <a href="mailto:mohamedelhaissan@gmail.com">Say Hello</a>
+                
             </section>
         </main>
         <footer class="d-flex justify-content-between align-items-center p-3">
-            <h2 class="fw-bold fs-4 ">Mohamed</h2>
-            <h4 class="fw-bold fs-4">@2024 made by Mohamed</h4>
+            <h2 class="fw-bold fs-3 ">Mohamed</h2>
+            <h4 class="fw-bold fs-3">@2024 made by Mohamed</h4>
         </footer>
 
         <div class="scrool">
             <i class="fa-solid fa-chevron-up" id="scroolarrow"></i>
         </div>
+    </div>
+    <div class="scrolling-box" id="scrollbox">
+        <a href="#home"><i class="fa-solid fa-house"></i></a>
+        <a href="#about"><i class="fa-regular fa-user"></i></a>
+        <a href="#project"><i class="fa-solid fa-briefcase"></i></a>
+        <a href="tel:0678888898"><i class="fa-solid fa-phone-flip"></i></a>
+
+        <a href="#Experience"><i class="fa-solid fa-code"></i></a>
     </div>
     <script src="script.js"></script>
 </body>
